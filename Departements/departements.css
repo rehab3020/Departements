@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.link{
+height: 10%;
+padding: 7px;
+}
+h2 {
+  text-align: center;
+  color: rgb(7, 117, 20);
+}
+body {
+  background: rgb(236, 232, 232);
+  font-family: sans-serif;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.container {
+  width: 90%;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.card {
+  width: 20%;
+  height: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+.card-header {
+  text-align: center;
+  padding: 10px 10px;
+  background: linear-gradient(to right, #33cd38, #33cd38);
+  color: #fff;
+  height: 20%;
+}
+
+.card-bodyDental,
+.card-bodyChest,
+.card-bodyPediatrics,
+.card-bodySurgery,
+.card-bodyNeurology,
+.card-bodyCardiology,
+.card-bodyogOphthalmology,
+.card-bodyog{
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 15px;
+  height: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70%;
+}
+.card-bodyDental {
+  background-image: url(../image/female-dentist-holding-tooth.png);
+  
+}
+.card-bodyChest {
+  background-image: url(../image/Chest.jpg);
+  
+}
+.card-bodyPediatrics {
+  background-image: url(../image/PAEDIATRIC.jpg);
+}
+.card-bodySurgery {
+  background-image: url(../image/Surgery.jpeg);
+}
+.card-bodyNeurology {
+  background-image: url(../image/Neurology.jpeg);
+}
+.card-bodyCardiology{
+    background-image: url(../image/Heart.png);
+  }
+  .card-bodyogOphthalmology{
+    background-image: url(../image/ophthalmology-hero.jpg);
+  }
+  .card-bodyog {
+    background-image: url(../image/istockphoto-1347877065-612x612.jpg);
+  }
+
+
+
+.card:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 40px rgb(0, 0, 0, 0.25);
+}
+@media screen and(max-width:1000px) {
+  .card {
+    width: 40%;
+  }
+}
